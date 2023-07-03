@@ -1,0 +1,222 @@
+.section4{
+  padding: 4rem 0px;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding-top: 94px;
+  align-items: center;
+  justify-content: center;
+}
+
+.buisness {
+  font-weight: 700;
+  font-size: 64px;
+  color: #fff;
+  text-align: center;
+}
+
+.buisness span {
+  text-decoration: underline;
+  color: #4B0082;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 17px;
+  color: #fff;
+  margin-top: 32px;
+  text-align: center;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  width: 100%;
+}
+.dashboard div{
+  width: 50%;
+}
+.txtcenter {
+  text-align: center;
+}
+
+.sign-mobile {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.brands {
+  position: relative;
+  overflow: hidden;
+  margin-top: 69px;
+  height: 8.5rem;
+}
+
+
+.brands__preWrapper {
+  position: relative;
+  width: 100%;
+  height: 8.5rem;
+  transform: translateX(0%);
+  animation: scroll1 10s linear infinite;
+  animation-delay: 0.5s;
+  animation-direction: normal;
+  will-change: transform;
+}
+
+.brands__wrapper {
+  position: absolute;
+  white-space: nowrap;
+  transform: translateX(0%) translateZ(0);
+  animation: scroll2 10s linear infinite;
+  animation-delay: 0.5s;
+  animation-direction: normal;
+  will-change: transform;
+}
+
+.brands__wrapper>a,
+.brands__wrapper>img {
+  position: relative;
+  display: inline-block;
+  margin: 0 1rem;
+  vertical-align: middle;
+}
+
+.brands__wrapper>a img {
+  max-width: 15rem;
+  max-height: 8.5rem;
+}
+
+@keyframes scroll1 {
+  0% {
+    transform: translateX(-0%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes scroll2 {
+  0% {
+    transform: translateX(0%) translateZ(0);
+  }
+
+  100% {
+    transform: translateX(-100%) translateZ(0);
+  }
+}
+
+@media (max-width:992px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .buisness {
+    font-size: 40px;
+  }
+
+  .hero {
+    padding-top: 20px;
+  }
+
+  .brands {
+    margin-top: 40px;
+  }
+  .dashboard{
+    display: none;
+  }
+  .hidden {
+    display: block;
+  }
+  .join {
+    margin: 0.2em auto;
+    padding: 12px 45px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 600;
+    color: #00218F;
+    background-color: #fff;
+    text-align: center;
+    transition: all 0.2s;
+    font-size: 18px;
+  }
+  .join:hover{
+    color: #fff;
+    background-color: #00218F;
+    transition: 0.5s ease;
+  }
+  .company{
+    color: #37E2D5;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .buisness{
+    font-weight: 600;
+  }
+}
+@media (max-width:576px) {
+  .sign-mobile {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .subtitle{
+    display: none;
+  }
+
+  .brands__wrapper>a,
+  .brands__wrapper>img {
+    margin: 0 5px;
+  }
+
+  .hidden {
+    display: block;
+  }
+  .join {
+    margin: 0.2em auto;
+    padding: 12px 45px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 600;
+    color: #00218F;
+    background-color: #fff;
+    text-align: center;
+    transition: all 0.2s;
+    font-size: 18px;
+  }
+  .join:hover{
+    color: #fff;
+    background-color: #00218F;
+    transition: 0.5s ease;
+  }
+  .company{
+    color: #37E2D5;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 5rem;
+  }
+  .buisness{
+    font-weight: 600;
+    font-size: 25px;
+  }
+}
